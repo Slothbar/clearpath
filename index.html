@@ -1,76 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ClearPath Home Services offers trusted seasonal property maintenance in Michigan including gutter cleaning, power washing, lawn care, and more. Get a free quote today!">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ClearPath Home Services offers professional seasonal property maintenance in Michigan. Gutter cleaning, power washing, lawn care, home cleaning & more.">
   <title>ClearPath Home Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo"><strong>ClearPath Home Services</strong></div>
-      <div class="nav-links">
-        <a href="https://forms.gle/9MUbjG8y2kdydDJq9" target="_blank">Subcontractors</a>
-        <a href="#contact">Get a Quote</a>
-      </div>
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="logo">ClearPath</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="https://forms.gle/b1xkWuLmX7ZJeE8r9" target="_blank">Subcontractors</a></li>
+        <li><a href="#contact" class="cta-button">Get a Quote</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>ClearPath Home Services</h1>
-    <h2>We Make Home Care Clear.</h2>
-    <p>Trusted seasonal property maintenance for Michigan homeowners — from gutter cleaning to lawn care, power washing, and more.</p>
-    <div class="hero-image">
-      <img src="hero-placeholder.jpg" alt="Well-maintained home exterior" />
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Your Home. Our Priority.</h1>
+      <p>Michigan’s trusted professionals for property maintenance, year-round. Gutter cleaning, power washing, lawn care, home cleaning, and more—done right the first time.</p>
+      <a href="#contact" class="hero-cta">Request a Free Quote</a>
+    </div>
+    <div class="hero-img">
+      <img src="hero-placeholder.jpg" alt="Modern home with clean exterior" />
     </div>
   </section>
 
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="two-col">
+  <section id="services" class="services-section">
+    <h2>What We Do</h2>
+    <div class="services-grid">
       <div class="service-card">
-        <img src="exterior-maintenance.jpg" alt="Exterior maintenance in progress" />
-        <h3>Exterior Maintenance</h3>
-        <p>We provide power washing, gutter cleaning, junk removal, and seasonal yard cleanups to keep your home’s exterior looking sharp and functioning properly year-round.</p>
+        <img src="power-wash.jpg" alt="Power washing driveway">
+        <h3>Power Washing</h3>
+        <p>High-pressure exterior cleaning to make siding, driveways, patios, and sidewalks look like new.</p>
       </div>
       <div class="service-card">
-        <img src="lawn-care.jpg" alt="Freshly mowed lawn" />
-        <h3>Lawn & Pet Care</h3>
-        <p>Weekly lawn mowing and pet waste removal plans available. Affordable, reliable, and handled by professionals who respect your property and your time.</p>
+        <img src="gutter.jpg" alt="Clean gutters">
+        <h3>Gutter Cleaning</h3>
+        <p>Keep water flowing and prevent roof and foundation damage with seasonal gutter maintenance.</p>
       </div>
       <div class="service-card">
-        <img src="home-cleaning.jpg" alt="Clean modern interior" />
+        <img src="lawn.jpg" alt="Freshly cut lawn">
+        <h3>Lawn Care</h3>
+        <p>Weekly mowing plans to keep your yard neat, green, and worry-free.</p>
+      </div>
+      <div class="service-card">
+        <img src="cleaning.jpg" alt="Clean interior living room">
         <h3>Home Cleaning</h3>
-        <p>Now offering basic, standard, and deep residential cleaning services. Perfect for move-ins, move-outs, or just maintaining peace of mind and a clean home.</p>
+        <p>One-time or recurring deep cleans with reliable professionals. Move in, move out, or peace of mind maintenance.</p>
       </div>
     </div>
   </section>
 
-  <section class="why-choose">
+  <section id="why" class="why-section">
     <h2>Why Choose ClearPath?</h2>
-    <p>We're local, insured, and focused on delivering clear communication and consistent results. With ClearPath, you're not just hiring a handyman — you're hiring a service partner who shows up, follows through, and respects your home.</p>
-    <div class="why-image">
-      <img src="why-choose-us.jpg" alt="Friendly team member helping a customer" />
+    <div class="why-content">
+      <div class="why-text">
+        <p>We’re not just another handyman service—we’re a customer-first, professionalism-driven, local company that believes in doing what we say, when we say it, with pride in every detail.</p>
+        <ul>
+          <li>✔ Fully insured & vetted professionals</li>
+          <li>✔ Transparent pricing & no surprise charges</li>
+          <li>✔ Easy online booking & quick communication</li>
+          <li>✔ 5-star service reputation (we’re building it!)</li>
+        </ul>
+      </div>
+      <div class="why-image">
+        <img src="team.jpg" alt="Friendly technician with customer">
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Get a Free Quote</h2>
-    <div class="cta-form">
-      <form action="https://formsubmit.co/clearpathhomeservices@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Tell us what you need..." required></textarea>
-        <button type="submit">Send Request</button>
-      </form>
-    </div>
+  <section id="contact" class="contact-section">
+    <h2>Request a Free Quote</h2>
+    <form action="https://formsubmit.co/clearpathhomeservices@gmail.com" method="POST" class="contact-form">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Tell us what you need…" required></textarea>
+      <button type="submit">Send My Request</button>
+    </form>
   </section>
 
-  <footer>
-    <p>&copy; 2025 ClearPath Home Services | Serving Dryden, Lapeer County, and surrounding areas</p>
+  <footer class="site-footer">
+    <p>&copy; 2025 ClearPath Home Services • Serving Dryden, Lapeer County, and surrounding Michigan areas</p>
   </footer>
 </body>
 </html>
