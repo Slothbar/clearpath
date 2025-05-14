@@ -14,12 +14,12 @@
   <header class="main-header">
     <nav class="navbar">
       <div class="logo">ClearPath</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
         <li><a href="#why">Why Us</a></li>
-        <li><a href="https://forms.gle/b1xkWuLmX7ZJeE8r9" target="_blank">Subcontractors</a></li>
+        <li><a href="https://your-google-form-link.com" target="_blank">Subcontractors</a></li>
         <li><a href="#contact" class="cta-button">Get a Quote</a></li>
-        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
       </ul>
     </nav>
   </header>
@@ -31,7 +31,7 @@
       <a href="#contact" class="hero-cta">Request a Free Quote</a>
     </div>
     <div class="hero-img">
-      <a href="https://ibb.co/PsJwyGbC"><img src="https://i.ibb.co/PsJwyGbC/Untitled-design-1.png" alt="Untitled-design-1" border="0"></a>
+      <img src="hero-placeholder.jpg" alt="Modern home with clean exterior" />
     </div>
   </section>
 
@@ -63,11 +63,14 @@
       <div class="why-text">
         <p>We’re not just another handyman service—we’re a customer-first, professionalism-driven, local company that believes in doing what we say, when we say it, with pride in every detail.</p>
         <ul>
-          <li>✔ Fully insured & vetted professionals</li>
-          <li>✔ Transparent pricing & no surprise charges</li>
-          <li>✔ Easy online booking & quick communication</li>
-          <li>✔ 5-star service reputation (we’re building it!)</li>
+          <p>✔ Fully insured & vetted professionals<br>
+          ✔ Transparent pricing & no surprise charges<br>
+          ✔ Easy online booking & quick communication<br>
+          ✔ 5-star service reputation (we’re building it!)<br></p>
         </ul>
+      </div>
+      <div class="why-image">
+        <img src="team.jpg" alt="Friendly technician with customer">
       </div>
     </div>
   </section></center>
@@ -86,15 +89,15 @@
   <footer class="site-footer">
     <p>&copy; 2025 ClearPath Home Services • Serving Dryden, Lapeer County, and surrounding Michigan areas</p>
   </footer>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".nav-toggle");
-    const navLinks = document.querySelector(".nav-links");
 
-    toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
