@@ -33,12 +33,22 @@ img {
   align-items: center;
   max-width: 1200px;
   margin: auto;
+  position: relative;
 }
 
 .logo {
   font-size: 1.8rem;
   color: #ffffff;
   font-weight: 700;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -57,6 +67,27 @@ img {
 .nav-links a:hover,
 .cta-button {
   color: #ffd700;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    background-color: #0f4c81;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
 }
 
 /* Hero Section */
@@ -240,35 +271,4 @@ img {
   padding: 2rem;
   font-size: 0.9rem;
   margin-top: 2rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-content {
-    padding-right: 0;
-  }
-
-  .why-content {
-    flex-direction: column;
-  }
-
-  .why-image {
-    text-align: center;
-  }
 }
